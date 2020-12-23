@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Diary</title>
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="title">Fashion Dairy</div>
+      <div class="menu">
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item">Blog</div>
+        <div class="item">Contact</div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item">Blog</div>
+        <div class="item">Contact</div>
+        <div onclick="closeMobileMenu();" class="close">X</div>
+      </div>
+      <div onclick="showMobileMenu();" class="mobile-menu-trigger">
+        <div class="lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="memo">STYLE IS A <br />CHOICE<br />MAKE YOURS.</div>
+    </nav>
+    <section class="gallery">
+      <div class="col">
+        <div class="block picture pc-1">
+          <div class="words">
+            <div class="title">Read</div>
+            <div class="story">THE BLOG</div>
+            <div class="action">
+              <span class="btn">Read More</span>
+            </div>
+          </div>
+        </div>
+        <div class="block text">
+          <div class="words">
+            <div class="title">Hello</div>
+            <div class="story">Veronica</div>
+            <div class="action">
+              <span class="btn">Read More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="block text">
+          <div class="words">
+            <div class="title">Advertise with</div>
+            <div class="story">Fashion Diva</div>
+            <div class="action">
+              <span class="btn">Read More</span>
+            </div>
+          </div>
+        </div>
+        <div class="block picture pc-2">
+          <div class="words">
+            <div class="title">Contribute</div>
+            <div class="story">TO THE BLOG</div>
+            <div class="action">
+              <span class="btn">Read More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="card">
+        <div class="mask"></div>
+        <div class="img pc-1"></div>
+        <div class="text">
+          <div class="title">What I Wore: Travel Edition</div>
+          <div class="para">
+            Create a blog post subtitle that summarizes your post in a few
+            short, punchy sentences and entices your audience to continue
+            reading. Wel...
+          </div>
+          <div class="message">
+            <div class="view">85 views</div>
+            <div class="comment">Write a comment</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="mask"></div>
+        <div class="img pc-2"></div>
+        <div class="text">
+          <div class="title">Picking the Perfect Booties for You</div>
+          <div class="para">
+            Create a blog post subtitle that summarizes your post in a few
+            short, punchy sentences and entices your audience to continue
+            reading. Wel...
+          </div>
+          <div class="message">
+            <div class="view">85 views</div>
+            <div class="comment">Write a comment</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="copyright">
+        <p>© 2021 by PengPeng and Xuemi</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

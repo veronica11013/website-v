@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: arial, sans-serif;
+}
+nav {
+  height: 900px;
+  background-image: url(../img/bg01.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+nav .title {
+  text-align: center;
+  font-size: 2em;
+
+  padding-top: 40px;
+  padding-bottom: 80px;
+  font-family: "Dancing Script", cursive;
+}
+/* nav .menu */
+nav .menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 250px;
+}
+nav .menu .item {
+  font-size: 0.8em;
+  margin: 0 40px;
+  color: #222222;
+  text-shadow: 0 0 5px #ffffff;
+  cursor: pointer;
+
+  transition: transform 0.3s;
+}
+nav .menu .item:hover {
+  transform: scale(1.05, 1.05);
+  color: #000000;
+}
+/* nav .mobile-menu */
+nav .mobile-menu {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+}
+nav .mobile-menu .item {
+  font-size: 0.8em;
+  color: #222222;
+  padding-top: 30px;
+  cursor: pointer;
+}
+nav .mobile-menu .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/* nav .mobile-menu-trigger */
+nav .mobile-menu-trigger {
+  display: none;
+  justify-content: center;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+nav .mobile-menu-trigger .lines {
+  width: 40px;
+}
+nav .mobile-menu-trigger .lines .line {
+  height: 2px;
+  background-color: #000000;
+  margin: 8px 0;
+}
+nav .memo {
+  text-align: center;
+  font-size: 3em;
+  line-height: 1.25em;
+  letter-spacing: 3px;
+}
+/* 螢幕尺寸小於800像素, 套用下列設定*/
+@media (max-width: 800px) {
+  nav {
+    height: 600px;
+    background-position: 20% center;
+  }
+  nav .title {
+    padding: 25px 0px;
+    margin-bottom: 40px;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .mobile-menu-trigger {
+    display: flex;
+  }
+  nav .memo {
+    font-size: 2em;
+  }
+}

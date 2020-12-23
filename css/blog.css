@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+section.blog {
+  height: 850px;
+  background-color: #f8feff;
+  padding: 40px 0;
+}
+.blog .card {
+  width: 980px;
+  border: 1.5px solid #e0e0e0;
+  height: 310px;
+  display: flex;
+  margin: 50px auto;
+}
+.card .mask {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 490px;
+  height: 307px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.card .mask:hover {
+  opacity: 0;
+}
+.card .img {
+  width: 50%;
+}
+.card .pc-1 {
+  background-image: url(../img/bg04.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card .pc-2 {
+  background-image: url(../img/bg05.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card .text {
+  width: 50%;
+  padding: 35px;
+}
+.card .text .title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.card .text .para {
+  font-size: 0.8em;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+  color: #6c6c6c;
+}
+.card .text .message {
+  font-size: 13px;
+  display: flex;
+  border-top: 1px solid #bebebe;
+  padding-top: 20px;
+  color: #6c6c6c;
+}
+.card .text .message .view {
+  padding-right: 30px;
+}
+footer .copyright {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  padding: 16px 0;
+  font-size: 14px;
+}
+@media (max-width: 800px) {
+  section.blog {
+    height: 1250px;
+    padding: 40px;
+  }
+  .blog .card {
+    height: 530px;
+    width: 90%;
+    flex-direction: column;
+  }
+  .blog .card .img {
+    height: 310px;
+    width: 100%;
+  }
+  .blog .card .text {
+    width: 100%;
+    padding: 20px;
+  }
+  .card .text .para {
+    margin-bottom: 35px;
+  }
+}
